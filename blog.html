@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sky News</title>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootsrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #F6F6F6;">
+     <!-- Nav Section Start -->
+     <header>
+        <section class="container">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <h2  class="pt-3 me-5 pe-5" style="font-family: 'Poppins', sans-serif; color: #5D5FEF; font-weight: 800;" aria-current="page">Sky News</h2>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class=" pt-4 ms-5 ps-5" style="font-family: 'Poppins', sans-serif;color: #5D5FEF;" >News</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class=" ms-5 ps-5 pt-5" style="font-family: 'Poppins', sans-serif; color: #5D5FEF;" >Blogs</a>
+            </li>
+          </ul>
+          <hr class="me-3 ms-3">
+        </section>
+      </header> 
+      <!-- Nav Section End -->
+        <h1 class="text-center mt-4" style="font-family: 'Poppins', sans-serif; color: #5D5FEF;font-weight: 700;">Welcome To, Sky News Blogs</h1>
+    
+    <main>
+    <!-- Question Part -->
+    <section class="container mt-5">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+             <h2 style="font-family: 'Poppins', sans-serif;">Difference Between Var, Const and Let</h2> 
+              
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong style="font-family: 'Poppins', sans-serif;">
+                <span> <p>
+                Var - Before the advent of ES6, var declarations ruled. There are issues associated with variables declared with var, though. That is why it was necessary for new ways to declare variables to emerge. </p> </span>
+            <span>
+                <p>
+                   Let - Just like var,  a variable declared with let can be updated within its scope. Unlike var, a let variable cannot be re-declared within its scope.
+                </p>
+            </span><span>
+                <p>
+                    Const - Like let declarations, const declarations can only be accessed within the block they were declared.
+                    const cannot be updated or re-declared
+                </p>
+             </span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+             <h2 style="font-family: 'Poppins', sans-serif;">Difference between arrow functions and regular functions</h2> 
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong style="font-family: 'Poppins', sans-serif;">
+                <span> <p>
+                 Arrow functions – a new feature introduced in ES6. Enable writing concise functions in JavaScript. While both regular and arrow functions work in a similar manner.
+                 </p> </span>
+                 Regular functions - created using function declarations or expressions are constructible and callable. Since regular functions are constructible, they can be called using the new keyword. However, the arrow functions are only callable and not constructible.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+             <h2 style="font-family: 'Poppins', sans-serif;">Difference between map,forEach,filter,find</h2> 
+              
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+             <p style="font-family: 'Poppins', sans-serif;"></p> 
+              <strong style="font-family: 'Poppins', sans-serif;">
+                <span>
+               <p> map() - method is used to iterate over an array and calling function on every element of array. </p> </span>
+                <span> <p> forEach() - method calls a function for each element in an array.But don't get return. </p> </span>
+                <span> <p> filter() - if the condition match then its give the all matching value. </p> </span>
+                find() - if the condition match then its give only the first matching value.</strong> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
