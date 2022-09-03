@@ -21,14 +21,14 @@
       <section class="container">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <h2 class="pt-3 me-5 pe-5" style="font-family: 'Poppins', sans-serif; color: #5D5FEF; font-weight: 800;" aria-current="page">Sky News</h2>
+            <h2 class=" me-5 py-1 px-2 rounded" style="font-family: 'Poppins', sans-serif; color: white; font-weight: 800; background-color: #5D5FEF; margin-top: 5px;" aria-current="page">Sky News</h2>
           </li>
-          <li class="nav-item">
-            <a class=" ms-5 ps-5" style="font-family: 'Poppins', sans-serif; color: #5D5FEF;" >News</a>
-          </li>
-          <li class="nav-item">
-            <a href="blog.html" class=" ms-5 ps-5" style="font-family: 'Poppins', sans-serif; color: #5D5FEF;" >Blog</a>
-          </li>
+         
+            <a class="mt-3 ms-5 ps-5" style="font-family: 'Poppins', sans-serif; color: #5D5FEF;" >News</a>
+          
+          
+            <a href="blog.html" class="mt-3 ms-5 ps-5" style="font-family: 'Poppins', sans-serif; color: #5D5FEF;" >Blog</a>
+          
         </ul>
         <hr class="me-3 ms-3">
         <div class="container d-flex justify-content-around" id="all-catagories">
@@ -62,8 +62,36 @@
           <div id="news-container" class="row row-cols-1 row-cols-md-3 g-4">
           </div>
         </div>
+        <div id="no-found-phone" class="mt-5 mb-5 text-center d-none">
+          <h3 class="text-warning">No News Found!!! </h3>
+      </div>
       </section>
       <!-- Card Box End -->
+      <!-- Modal -->
+      <section>
+        <!-- Button trigger modal -->
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="newsDetailModal" tabindex="-1" aria-labelledby="newsDetailModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="newsDetailModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="news-details" class="modal-body">
+              <p></p>
+              <p></p>
+              <p></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+                </section>
      </main>
      
      <!-- footer start -->
