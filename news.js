@@ -1,4 +1,4 @@
-// loading news //
+// ---- loading news --- //
 const loadCatagories = async () =>{
     try{
         const url = `https://openapi.programming-hero.com/api/news/categories`;
@@ -10,7 +10,7 @@ const loadCatagories = async () =>{
     }
    
 } 
-// display catagories //
+//----- display catagories -----//
 const displayCatagories = (catagories) => {
     const allCatagories = document.getElementById('all-catagories');
     catagories.forEach((catagory) =>{
@@ -21,6 +21,7 @@ const displayCatagories = (catagories) => {
         allCatagories.appendChild(catagoryDiv);
     })
 }
+
 // News section //
 const loadNews = async (id) => {
     const url = `
@@ -30,7 +31,6 @@ const loadNews = async (id) => {
     const data = await res.json();
     displayNewses(data.data);
   };
-  
   
   // Display News//
   const displayNewses = (newses) => {
@@ -47,13 +47,13 @@ const loadNews = async (id) => {
                             news.thumbnail_url
                           }" class="card-img-top h-50" alt="...">
                           <div class="card-body">
-                              <h5 style="font-family: 'Poppins', sans-serif;" class="card-title">${news.title}</h5>
+                              <h2 style="font-family: 'Poppins', sans-serif;" class="card-title">${news.title}</h2>
                               <p style="font-family: 'Poppins', sans-serif;" class="card-text">${news.details.slice(
                                 0,
                                 100
                               )}...</p>
                               <div class="d-flex align-items-start">
-                              <h4 style="font-family: 'Poppins', sans-serif;">${news.author.name ? news.author.name  : 'No Name Found'}</h4>
+                              <h3 style="font-family: 'Poppins', sans-serif;">${news.author.name ? news.author.name  : 'No Name Found'}</h3>
                               </div>
                               <img class="w-25 h-25 ps-2 rounded-circle" src="${news.author.img}" alt="">
                               <p style="font-family: 'Poppins', sans-serif;" class="pt-3">${news.author.published_date ? news.author.published_date  : 'No Date Found'}</p>
@@ -65,6 +65,9 @@ const loadNews = async (id) => {
       newsContainer.appendChild(newDiv);
     });
   };
+
+// ---- Modal Section ---- //
+
   const loadnewsDetails = async(id_name) =>{
     const url =  `https://openapi.programming-hero.com/api/news/${id_name}`;
     const res = await fetch(url);
@@ -86,8 +89,9 @@ const loadNews = async (id) => {
     <p style="font-family: 'Poppins', sans-serif;" class="card-text">${news.details}</p>
     <h4 style="font-family: 'Poppins', sans-serif;">${news.author.name ? news.author.name  : 'No Name Found'}</h4>
     <img class="w-25 h-25 ps-2 rounded-circle" src="${news.author.img}" alt="">
+    <p style="font-family: 'Poppins', sans-serif;" class="pt-3">${news.author.published_date ? news.author.published_date  : 'No Date Found'}</p>
     <p <i class="fa-regular fa-eye"></i> ${news.total_view ? news.total_view  : '0'}</p>
     `;
-    
   }
 loadCatagories();
+
